@@ -1,0 +1,117 @@
+@import url("./main.css");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  max-height: 80vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  gap: 24px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container .nav-container {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: -50px;
+  z-index: 20;
+  background-color: var(--primary-bright-color);
+  padding: var(--padding-1);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.container .nav-container input {
+  padding: var(--padding-1);
+  background-color: var(--primary-color);
+  border: none;
+  outline: none;
+  color: white;
+  width: 200px;
+  border-radius: var(--border-radius);
+}
+
+.container .nav-container input::placeholder {
+  color: #eee;
+}
+
+table {
+  width: 100%;
+  color: var(--text-color, #fff);
+  border-collapse: collapse;
+  table-layout: fixed;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+caption {
+  background: var(--primary-bright-color);
+  font-size: var(--font-size-3);
+  font-weight: bold;
+  color: var(--text-color, #fff);
+  padding: var(--padding-2);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+th,
+td {
+  padding: var(--padding-1);
+  color: var(--text-color, #fff);
+  font-size: var(--font-size-2);
+  border-bottom: var(--border-size-1) solid var(--border-color);
+  text-align: start;
+}
+
+th {
+  background: var(--primary-bright-color);
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: var(--border-size-2) solid var(--border-color);
+}
+
+tbody tr {
+  background: var(--secondary-color);
+}
+
+tbody tr:nth-child(even) {
+  background: var(--primary-color);
+}
+
+tbody tr td:first-child {
+  max-width: 200ch;
+  overflow: hidden;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--font-size-3);
+  padding: var(--padding-1);
+  line-height: 12px;
+}
+
+@media (max-width: 992px) {
+  thead {
+    display: none;
+  }
+
+  td {
+    display: block;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: var(--border-color);
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Feud</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./css/game.css" />
+  </head>
+  <body>
+    <div class="strikes-container"></div>
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="nav-container">
+        <div class="left-nav">
+          <button class="intro-sound-btn btn">Intro</button>
+          <a class="btn" href="host.html" target="_blank">Go to host view</a>
+        </div>
+        <div class="right-nav">
+          <a class="btn" target="_blank" href="help.html">Help</a>
+          <select class="btn" id="round-select"></select>
+        </div>
+      </div>
+      <div class="header">
+        <h2 class="question-index">Question 1</h2>
+        <h3 class="question">Loading...</h3>
+      </div>
+      <div class="answers">
+        <div class="answer" data-show="false" data-index="1">
+          <p>Loading...</p>
+          <span>25</span>
+        </div>
+        <div class="answer" data-show="false" data-index="2">
+          <p>Loading...</p>
+          <span>25</span>
+        </div>
+        <div class="answer" data-show="false" data-index="3">
+          <p>Loading...</p>
+          <span>25</span>
+        </div>
+        <div class="answer" data-show="false" data-index="4">
+          <p>Loading...</p>
+          <span>25</span>
+        </div>
+        <div class="answer" data-show="false" data-index="5">
+          <p>Loading...</p>
+          <span>25</span>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="change-lang btn border-orange">Change language</button>
+        <button class="prev-round btn border-orange">Previous Round</button>
+        <button class="next-round btn border-orange">Next Round</button>
+        <button class="show-answers btn border-orange">Show All Answers</button>
+        <button class="strike btn border-orange">Strike 1</button>
+      </div>
+    </div>
+    <script src="./js/pages/main.js" type="module"></script>
+  </body>
+</html>

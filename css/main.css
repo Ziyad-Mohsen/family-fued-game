@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --primary-color: #1b3e84;
+  --primary-bright-color: #4472c4;
+  --hover-color: #112753;
+  --container-bg-color: #00225cb7;
+  --border-color: #ed7d31;
+  --overlay-color: rgba(15, 26, 56, 0.85);
+  /* font size */
+  --font-size-1: 0.8rem;
+  --font-size-2: 1rem;
+  --font-size-3: 1.2rem;
+  --font-size-4: 2.2rem;
+  /* padding */
+  --padding-1: 10px;
+  --padding-2: 14px;
+  --padding-3: 18px;
+  --container-padding: 60px;
+  /* Border */
+  --border-size-1: 1px;
+  --border-size-2: 2px;
+  --border-size-3: 3px;
+  --border-radius: 10px;
+}
+
+body {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  backdrop-filter: blur(3px);
+  background: url("../assets/images/family-feud-background-slide.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-height: 100%;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* framework */
+.overlay {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-color);
+}
+
+.container {
+  background-color: var(--container-bg-color);
+  padding: var(--container-padding);
+  border-radius: var(--border-radius);
+  max-width: 1200px;
+  width: 95%;
+  margin-block: 50px;
+  color: white;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: var(--padding-1);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: 0.1s;
+  border: var(--border-size-1) solid white;
+  font-size: var(--font-size-1);
+  font-weight: normal;
+  width: fit-content;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+}
+
+.border-orange {
+  border: var(--border-size-2) solid var(--border-color);
+}
