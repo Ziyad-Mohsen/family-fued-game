@@ -4,7 +4,7 @@ A web-based Family Feud game for group play, featuring host controls, sound effe
 
 ## Live Demo
 
-Try the game online: [Play Family Feud Web Game](https://your-live-demo-link.com)
+Try the game online: [Play Family Feud Web Game](https://ziyad-mohsen.github.io/family-fued-game/)
 
 ## Features
 
