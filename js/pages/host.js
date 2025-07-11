@@ -32,6 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+    document.querySelector(".scroll-top-btn").addEventListener("click", () => {
+      document
+        .querySelector(".container")
+        .scrollTo({ top: 0, behavior: "smooth" });
+    });
+
     // initial load
     showData();
   });
