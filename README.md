@@ -2,6 +2,10 @@
 
 A web-based Family Feud game for group play, featuring host controls, sound effects, and support for English and Arabic questions.
 
+## Live Demo
+
+Try the game online: [Play Family Feud Web Game](https://your-live-demo-link.com)
+
 ## Features
 
 - Modern, responsive UI

@@ -1,6 +1,6 @@
 export async function getData(lang = "en", page = 1, limit = 10) {
   try {
-    const response = await fetch(`../data/data-${lang}.csv`);
+    const response = await fetch(`data/data-${lang}.csv`);
     const data = await response.text();
     const lines = data.split("\n").filter((line) => line.trim() !== "");
     const headings = lines.slice(0, 1);

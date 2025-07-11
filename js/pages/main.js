@@ -171,7 +171,7 @@ function showStrikes(number) {
   playSound(strikeSound);
   for (let i = 0; i < number; i++) {
     const strikeImg = document.createElement("img");
-    strikeImg.src = "../../assets/images/strike-img.png";
+    strikeImg.src = "assets/images/strike-img.png";
     strikeImg.alt = "strike-img";
     strikesContainer.appendChild(strikeImg);
   }
